@@ -21,13 +21,13 @@ $(document).ready(function() {
         var col = $(this).attr('data-col');
         if (queen == null) {
           queen = { row: row, col: col };
-          squares[row][col].text('\u2655');
+          squares[row][col].text('\u265B');
           highlightMoves(row, col);
         } 
         else {
           squares[queen.row][queen.col].text('');
           queen = { row: row, col: col };
-          squares[row][col].text('\u2655');
+          squares[row][col].text('\u265B');
           highlightMoves(row, col);
         }
       });
@@ -37,7 +37,7 @@ $(document).ready(function() {
   function highlightMoves(row, col) {
     for (var i = 0; i < 8; i++) {
       for (var j = 0; j < 8; j++) {
-        if (i == row || j == col || Math.abs(i - row) == Math.abs(j - col)) {
+        if (i != row && j != col && Math.abs(i - row) == Math.abs(j - col)) {
           squares[i][j].addClass('highlight');
         } else {
           squares[i][j].removeClass('highlight');
