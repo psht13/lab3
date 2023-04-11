@@ -41,6 +41,7 @@ label {
   background-color: #858484;
 }
 
-.highlight {
-  background-color: #c9f367;
+.highlight::after {
+  content: "\2764";
+  color: '#000000';
 }
