@@ -42,6 +42,6 @@ label {
 }
 
 .highlight::after {
-  content: "\2764";
+  content: "\2665";
   color: '#000000';
 }
