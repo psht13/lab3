@@ -21,13 +21,13 @@ $(document).ready(function() {
         var col = $(this).attr('data-col');
         if (queen == null) {
           queen = { row: row, col: col };
-          squares[row][col].text('♛');
+          squares[row][col].text('\u2655');
           highlightMoves(row, col);
         } 
         else {
           squares[queen.row][queen.col].text('');
           queen = { row: row, col: col };
-          squares[row][col].text('♛');
+          squares[row][col].text('\u2655');
           highlightMoves(row, col);
         }
       });
