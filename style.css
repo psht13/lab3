@@ -1,0 +1,46 @@
+body {
+background: rgb(67,63,124);
+background: linear-gradient(90deg, rgba(67,63,124,1) 21%, rgba(145,180,118,1) 59%, rgba(96,172,187,1) 87%); 
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  aling-items: middle;
+  font-family: Lato, sans-serif;  
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#board {
+  display: flex;
+  justify-content: center;
+  aling-items: middle;
+  width: 100%;
+  height: 100%;
+}
+
+.square {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  border: solid 1px black;
+}
+
+.white {
+  background-color: #f3f6f4;
+}
+
+.black {
+  background-color: #858484;
+}
+
+.highlight {
+  background-color: #c9f367;
+}
